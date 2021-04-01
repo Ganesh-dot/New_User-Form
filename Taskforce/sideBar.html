@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="sideBar.css"> 
     </head>
     <body>
-        <div id="sidebar-content" class="side-content">
+        <div id="sidebar-content" class="side-content" style="width: 0px;">
             <div class="side-head">
                <a class="text">
                    TASK
@@ -16,9 +16,10 @@
                <a class="text">
                    FORCE
                </a>
+               <a class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
             </hr>
             </div>
-            <ul class="nav-list">
+            <ul class="nav-list">  
                 <li>
                   <a>
                     <i class="fas fa-laptop-code"></i>
@@ -69,5 +70,20 @@
                   </li>
             </ul>
         </div>
+        <div class="btn-container">
+           <div id="nav-btn" class="btn">
+              <button class="opn"> <i class="fas fa-bars" onclick="openNav()"></i> Task Force</button>
+           </div>
+        </div>
     </body>
+    <script>
+        function openNav(){
+            document.getElementById("sidebar-content").style.width = "230px";
+            document.getElementById("nav-btn").style.marginLeft = "230px";
+        }
+        function closeNav(){
+            document.getElementById("sidebar-content").style.width = "0px";
+            document.getElementById("nav-btn").style.marginLeft = "0px";
+        }
+    </script>
 </html>

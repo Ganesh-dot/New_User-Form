@@ -4,10 +4,10 @@ body{
     box-sizing: border-box;
 }
 .side-content{
+    overflow-x: hidden;
     background-color: #ba54f5;
-    min-height: 100%;
-    height: calc(100vh - 90px);
-    width: 230px;
+    width: 260px;
+    height: 575px;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -15,16 +15,16 @@ body{
     background-size: cover;
     display: block;
     box-shadow: 0px 0px 45px 0px rgb(0 0 0 / 60%);
-    margin-top: 80px;
+    margin-top: 75px;
     margin-left: 20px;
     border-radius: 5px;
 }
 .side-content .side-head .text{
     cursor: pointer;
+    opacity: 1;
     text-transform: uppercase;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 0.2rem;
     margin-bottom: 20px;
-    white-space: nowrap;
     color: #ffffff;
     text-decoration: none;
     font-weight: 400;
@@ -34,6 +34,15 @@ body{
     position: relative;
     padding: 0.5rem 0.7rem;
     z-index: 4;
+}
+.side-content .side-head i{
+    cursor: pointer;
+    color: white;
+    margin-top: 7px;
+    margin-right: -15px;
+    font-size: 20px;
+    width: 34px;
+    float: right;
 }
 .side-content .side-head:after{
     content: '';
@@ -64,7 +73,7 @@ body{
 }
 .side-content .nav-list li{
     text-align: left;
-    margin: 35px;
+    margin: 32px;
 }
 .side-content .nav-list i{
     font-size: 20px;
@@ -74,4 +83,18 @@ body{
     margin-right: 12px;
     line-height: 30px;
     position: relative;
+}
+.btn{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    padding: 24px;
+}
+.opn{
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    background: #343A40;
+    font-size: 20px;
+    padding: 10px 15px;
 }

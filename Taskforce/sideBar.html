@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
         <link rel="stylesheet" href="sideBar.css"> 
     </head>
     <body>
-        <div id="sidebar-content" class="side-content" style="width: 0px;">
+        <div id="sidebar-content" class="side-content">
             <div class="side-head">
                <a class="text">
                    TASK
@@ -77,13 +78,12 @@
         </div>
     </body>
     <script>
-        function openNav(){
-            document.getElementById("sidebar-content").style.width = "230px";
-            document.getElementById("nav-btn").style.marginLeft = "230px";
+       function openNav() {
+         document.getElementById("sidebar-content").style.width = "230px";
         }
-        function closeNav(){
-            document.getElementById("sidebar-content").style.width = "0px";
-            document.getElementById("nav-btn").style.marginLeft = "0px";
-        }
+
+       function closeNav() {
+         document.getElementById("sidebar-content").style.width = "0";
+       }
     </script>
 </html>

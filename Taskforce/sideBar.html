@@ -80,10 +80,13 @@
     <script>
        function openNav() {
          document.getElementById("sidebar-content").style.width = "230px";
+         document.getElementById("sidebar-content").style.display="block";
+         document.getElementById("sidebar-content").style.transition= "0.3s";
         }
 
        function closeNav() {
          document.getElementById("sidebar-content").style.width = "0";
+         document.getElementById("sidebar-content").style.transition= "0.3s";
        }
     </script>
 </html>
